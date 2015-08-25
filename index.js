@@ -12,6 +12,11 @@ module.exports = function (text) {
     text = text || defaultText;
 
     var transform = function (file, enc, cb) {
+        if (file.isNull()) {
+            this.push(file);
+            return cb();
+        }
+
         var contents = file.contents.toString();
         file.contents = new Buffer(text + contents);
         this.push(file);
