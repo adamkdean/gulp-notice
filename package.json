@@ -1,6 +1,6 @@
 {
   "name": "gulp-notice",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add auto-generated notices to the top of your auto-generated files",
   "main": "index.js",
   "scripts": {
